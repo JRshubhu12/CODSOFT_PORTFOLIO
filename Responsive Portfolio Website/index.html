@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="chatbot-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+</head>
+
+<body>
+
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="navbar">
+    <div class="max-width">
+    	<label class="theme-switch" onclick="darkMode()">
+  <input type="checkbox" class="theme-switch__checkbox">
+  <div class="theme-switch__container">
+    <div class="theme-switch__clouds"></div>
+    <div class="theme-switch__stars-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+      </svg>
+    </div>
+    <div class="theme-switch__circle-container" onclick="darkMode()">
+      <div class="theme-switch__sun-moon-container" onclick="darkMode()">
+        <div class="theme-switch__moon" onclick="darkMode()">
+          <div class="theme-switch__spot" onclick="darkMode()"></div>
+          <div class="theme-switch__spot" onclick="darkMode()"></div>
+          <div class="theme-switch__spot" onclick="darkMode()"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+
+
+
+      <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+      <ul class="menu">
+        <li><a href="#home" 			class="menu-btn">Home</a></li>
+        <li><a href="#about" 			class="menu-btn">About</a></li>
+        <li><a href="#services" 	class="menu-btn">Services</a></li>
+        <li><a href="#skills" 		class="menu-btn">Skills</a></li>
+        <li><a href="#teams"			class="menu-btn">Projects</a></li>
+        <li><a href="#contact" 		class="menu-btn">Contact</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- home section start -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, my name is</div>
+        <div class="text-2">Shubham Choudhary</div>
+        <div class="text-3">And I'm a <span class="typing"></span></div>
+        <button class="hireMe">
+    <a href="https://www.linkedin.com/in/shubham-choudhary-6474b3234/" class="external-link">Hire me</a>
+    <svg viewBox="0 0 16 16" class="bi bi-whatsapp" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+    </svg>
+</button>
+        <!a href="https://www.linkedin.com/in/shubham-choudhary-6474b3234/"><!/a>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About me</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img src="Profile picture.png" alt="">
+        </div>
+        <div class="column right">
+          <div class="text">I'm Shubham and I'm a <span class="typing-2"></span></div>
+          <p>Hello! My name is Shubham Choudhary. I am 18 Years old IT (Information Technology). I am a student of BCA (Bachelor of Computer Application) at Amity University,Patna. I am interested in Computer Science and I like to do programming. I learned five language's like C, C++, HTML, CSS, JAVA SCRIPT, PYTHON, MY SQL, Database Management and also do editing like Photo Editing, Video Editing and some 3D Animation, 2D Animation and 3D Modelling also. I am creating and design Website as a Frontend Developer in Web development, App Development, 3D Game Development.</p>
+          <a href="https://www.dropbox.com/scl/fi/82nes931855sa6od7ydoc/Shubham-Choudhary_Resume.pdf?rlkey=lczzi3qqogdu4qaq8ptxtvhkv&dl=0">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!a href="https://www.instagram.com/shubhamchoudharyand/" class="Insta"><!/a>
+
+  <!-- services section start -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title">My services</h2>
+      <div class="serv-content">
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <div class="text">Web Design</div>
+            <p>At my web design studio, we specialize in creating immersive online experiences that not only captivate visitors with stunning visuals but also engage them with intuitive navigation and responsive design. Our portfolio showcases a diverse array of projects, each meticulously designed to reflect the unique personality and objectives of our clients. Whether it's a personal blog, an e-commerce platform, or a corporate website, we pride ourselves on turning ideas into pixel-perfect reality, enhancing online identities, and leaving a lasting digital impression.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-chart-line"></i>
+            <div class="text">Software Design</div>
+            <p>Our software design services are a testament to our commitment to transforming concepts into functional, elegant, and scalable solutions. We harness cutting-edge technologies and industry best practices to architect software that not only meets but exceeds your business objectives. Our portfolio showcases a rich tapestry of software projects, each meticulously designed to deliver seamless user experiences, robust functionality, and adaptability to evolving needs. From mobile apps to enterprise software, we're dedicated to shaping the future of technology, one line of code at a time.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-code"></i>
+            <div class="text">Apps Design</div>
+            <p>Our portfolio is a testament to our ability to turn unique concepts into stunning, functional apps. Whether it's a sleek consumer app, a productivity tool, or a game-changing startup solution, we bring creativity and technical expertise to every project. With an emphasis on intuitive user interfaces, seamless navigation, and aesthetic appeal, our app designs enhance user engagement and leave a lasting digital impression.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- skills section start -->
+  <section class="skills" id="skills">
+    <div class="max-width">
+      <h2 class="title">My skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">My creative skills & experiences.</div>
+          <p>
+I am a web developer with experience in Python, HTML, CSS, JavaScript, and MySQL. I have a strong foundation in the fundamentals of web development, and I am able to build and maintain dynamic websites and web applications.
+
+I have experience using Python to develop the server-side logic of web applications. I am also proficient in using HTML, CSS, and JavaScript to create user interfaces. I have used MySQL to store and manage data for web applications.
+
+I am a quick learner and I am always eager to take on new challenges. I am also a team player and I am always willing to help others. I am confident that my skills and experience would be a valuable asset to any team.</p>
+            <br>
+  <button class="learn-more">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Learn More</span>
+  </button>
+
+
+        </div>
+        <div class="column right">
+          <div class="bars">
+            <div class="info">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="line html"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>CSS</span>
+              <span>60%</span>
+            </div>
+            <div class="line css"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>JavaScript</span>
+              <span>80%</span>
+            </div>
+            <div class="line js"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>Python</span>
+              <span>60%</span>
+            </div>
+            <div class="line python"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>MySQL</span>
+              <span>70%</span>
+            </div>
+            <div class="line mysql"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- teams section start -->
+  <section class="teams" id="teams">
+    <div class="max-width">
+      <h2 class="title">My Project's</h2>
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <img src="Database Prism.png" alt="">
+            <div class="text"><a href="https://sites.google.com/view/searchlika-platform/home"> Databse Prism</a></div>
+            <p>This web Application is used to manage all kind of user data and keep it secure in database by end  to end encrypted</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="Calculator-dynamic-gradient.png" alt="">
+            <div class="text"><a href="https://sites.google.com/view/searchlika-platform/home"> Age Calculator</a></div>
+            <p>This application is make in web development language which calculate users data with the given input and also calculate the users life cycle</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="Lika webot.png" alt="">
+            <div class="text"><a href="https://sites.google.com/view/searchlika-platform/home"> Lika webot</a></div>
+            <p>This application is made with Open AI api to help user to talk to a bot like a friend and can solve anything</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="1024px-Aqualung_music_player_drop_icon.svg.png" alt="">
+            <div class="text"><a href="https://sites.google.com/view/searchlika-platform/home"> Lika WE_Play</a></div>
+            <p>This Application is make to play your songs on finger tips it is totally make in HTML,CSS & JAVASCRIPT which contains all songs and respond to YT Music</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="Tic Tac Toe.jpg" alt="">
+            <div class="text"><a href="https://sites.google.com/view/searchlika-platform/home"> Tic Tac Toe</a></div>
+            <p>This application is made with JavaScript & Python so users can play tic tac toe with help of AI between users and computer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section start -->
+  <section class="contact" id="contact">
+  	<button class="btn-cssbuttons">
+<span>Button</span><span>
+  <svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+    <path fill="#ffffff" d="M767.99994 585.142857q75.995429 0 129.462857 53.394286t53.394286 129.462857-53.394286 129.462857-129.462857 53.394286-129.462857-53.394286-53.394286-129.462857q0-6.875429 1.170286-19.456l-205.677714-102.838857q-52.589714 49.152-124.562286 49.152-75.995429 0-129.462857-53.394286t-53.394286-129.462857 53.394286-129.462857 129.462857-53.394286q71.972571 0 124.562286 49.152l205.677714-102.838857q-1.170286-12.580571-1.170286-19.456 0-75.995429 53.394286-129.462857t129.462857-53.394286 129.462857 53.394286 53.394286 129.462857-53.394286 129.462857-129.462857 53.394286q-71.972571 0-124.562286-49.152l-205.677714 102.838857q1.170286 12.580571 1.170286 19.456t-1.170286 19.456l205.677714 102.838857q52.589714-49.152 124.562286-49.152z"></path>
+  </svg>
+</span>
+<ul>
+<li>
+  <a href="https://www.instagram.com/shubhamchoudharyand/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero" class="instagram"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path fill="white" d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg></a>
+</li>
+<li>
+  <a href="https://codepen.io/Shubham-Choudhary-the-sasster"><svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+  <path fill="white" d="M123.52064 667.99143l344.526782 229.708899 0-205.136409-190.802457-127.396658zM88.051421 585.717469l110.283674-73.717469-110.283674-73.717469 0 147.434938zM556.025711 897.627196l344.526782-229.708899-153.724325-102.824168-190.802457 127.396658 0 205.136409zM512 615.994287l155.406371-103.994287-155.406371-103.994287-155.406371 103.994287zM277.171833 458.832738l190.802457-127.396658 0-205.136409-344.526782 229.708899zM825.664905 512l110.283674 73.717469 0-147.434938zM746.828167 458.832738l153.724325-102.824168-344.526782-229.708899 0 205.136409zM1023.926868 356.00857l0 311.98286q0 23.402371-19.453221 36.566205l-467.901157 311.98286q-11.993715 7.459506-24.57249 7.459506t-24.57249-7.459506l-467.901157-311.98286q-19.453221-13.163834-19.453221-36.566205l0-311.98286q0-23.402371 19.453221-36.566205l467.901157-311.98286q11.993715-7.459506 24.57249-7.459506t24.57249 7.459506l467.901157 311.98286q19.453221 13.163834 19.453221 36.566205z"></path></svg></a>
+</li>
+<li>
+<a href="https://github.com/JRshubhu12"><svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+<path fill="white" d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path></svg></a></li></ul></button>
+    <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+        <div class="column left">
+        	<button class="button">
+<p class="break" text align="center"><div class="getintouch"> Get in touch</div></p>
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+<br>
+          <p class="break"><br>We'd love to hear from you and discuss how we can bring your vision to life. Whether you're looking for web design, software development, app design, or any other digital solution, we're here to make it happen. Your project is our passion, and your success is our goal. Contact us today, and let's embark on this exciting journey together. We're just a message or a call away, ready to turn your ideas into reality. Get in touch, and let's create something amazing!</p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Shubham Choudhary</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">Patna, Bihar</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title"><a href="mailto:shubhamchoudharyjr@outlook.com"> shubhamchoudharyjr@outlook.com</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right">
+          <div class="text">Message me</div>
+          <form action="#">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" placeholder="Name" required>
+              </div>
+              <div class="field email">
+                <input type="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Subject" required>
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit" id="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section start -->
+  <footer>
+    <span>Created By <a href="#">SHUBHAM</a> | <span class="far fa-copyright"></span>
+      2023 All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
